@@ -8,7 +8,8 @@ export function Header(){
         <Link href='/'>Home</Link><br />
         <Link href='/contatos'>Contatos</Link><br />
         <Link href='/repositorios-client-side'>Repositórios Client Side</Link><br />
-        <Link href='/repositorios-server-side'>Repositórios Server Side</Link>
+        <Link href='/repositorios-server-side'>Repositórios Server Side</Link><br />
+        <Link href='/dashboard'>Painel</Link>
         <hr />
     </header>
    )

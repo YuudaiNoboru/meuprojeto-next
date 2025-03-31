@@ -1,3 +1,5 @@
+import { OwnerRepo } from "@/components/owner-repo";
+
 interface DataPorps{
   id: number;
   name: string;
@@ -6,6 +8,7 @@ interface DataPorps{
     id: string;
     avatar_url: string;
     url: string;
+    login: string;
   }
 }
 
@@ -28,7 +31,12 @@ export default async function Home(){
       {data.map((item) => (
         <div key={item.id}>
           <strong>Repositório:</strong><a>{item.name}</a>
-          <br /><br />
+          <br />
+          <OwnerRepo
+            avatar_url={item.owner.avatar_url}
+            name={item.owner.login}
+          />
+          <br />
         </div>
       ))}
     </main>
