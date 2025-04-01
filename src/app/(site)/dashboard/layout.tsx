@@ -10,7 +10,7 @@ export default function DashboardLayout(
 ){
     return (
         <>
-            <h3>Header do dashboard</h3>
+            <h3>Menu do dashboard</h3>
             <HeaderDashboard/>
             <br />
             { children }

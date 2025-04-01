@@ -13,8 +13,10 @@ interface DataPorps{
 }
 
 async function getData() {
-  const response = await fetch('https://api.github.com/users/YuudaiNoboru/repos')
-
+  const response = await fetch(
+    'https://api.github.com/users/YuudaiNoboru/repos',
+    {next: {revalidate: 60}}
+  );
   return response.json()
 }
 
